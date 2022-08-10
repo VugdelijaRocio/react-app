@@ -1,0 +1,6 @@
+export const types = {
+    SET_DATA: "[HOME] SET DATA",
+    SET_DATA_LOADING: "[HOME] SET DATA LOADING",
+    SET_HOME_ERROR: "[HOME] SET ERROR",
+    REMOVE_HOME_ERROR: "[HOME] REMOVE ERROR",
+};

@@ -1,0 +1,16 @@
+.components-card{
+    min-width: 300px;
+    margin-bottom: 20px;
+    .ui-card{
+        margin: auto;
+        .MuiCardContent-root {
+            min-height: 100px;
+        }
+    }
+    .success {
+        background-color: #80c080;
+    }
+    .error {
+        background-color: #ae4d4d;
+    }
+}

@@ -6,6 +6,12 @@
         .MuiCardContent-root {
             min-height: 100px;
         }
+        .MuiTypography-root {
+            font-weight: bold;
+        }
+        .time {
+            font-weight: normal;
+        }
     }
     .success {
         background-color: #80c080;

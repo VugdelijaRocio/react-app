@@ -1,6 +1,7 @@
 import React, { Dispatch, useEffect, useState } from "react";
 
 import { CircularProgress, Typography } from "@mui/material";
+import moment from "moment";
 import { useDispatch, useSelector } from "react-redux";
 
 import { DataTypes } from "../../interfaces";
@@ -45,6 +46,9 @@ export const CardData = (props: PropTypes) => {
                 <div>
                     <Typography variant="body2">{data[hostName]?.message}</Typography>
                     <Typography variant="body2">OUTAGE</Typography>
+                    <Typography variant="body2" className="time">
+                        {moment(data[hostName]?.time).format("DD/MM/YYYY hh:mm:ss")}
+                    </Typography>
                 </div>
             );
         }
@@ -53,7 +57,9 @@ export const CardData = (props: PropTypes) => {
                 <div>
                     <Typography variant="body2">{data[hostName]?.message}</Typography>
                     <Typography variant="body2">{data[hostName]?.hostname}</Typography>
-                    <Typography variant="body2">{data[hostName]?.time}</Typography>
+                    <Typography variant="body2" className="time">
+                        {moment(data[hostName]?.time).format("DD/MM/YYYY hh:mm:ss")}
+                    </Typography>
                 </div>
             );
         }
